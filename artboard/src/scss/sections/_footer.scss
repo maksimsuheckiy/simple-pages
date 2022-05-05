@@ -1,0 +1,90 @@
+.footer {
+  background: $black;
+  padding: 40px 20px 45px;
+  text-align: center;
+}
+
+.contacts {
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 680px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $light;
+    padding-bottom: 8px;
+
+    &::before, &::after {
+      content: '';
+      width: 4px;
+      height: 1px;
+      display: inline-block;
+      background-color: #FEFEFE;
+      position: relative;
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 20px;
+    color: $gray;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &--hidden {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.socials {
+  padding: 25px 0;
+  max-width: 192px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 35px 0;
+  }
+}
+
+.legal {
+  max-width: 210px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 100%;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &--link {
+      color: $gray;
+    }
+  }
+}

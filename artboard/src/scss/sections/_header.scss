@@ -1,0 +1,146 @@
+.nav {
+  min-height: 80px;
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px
+  }
+}
+
+.hamburger {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__toggle {
+    opacity: 0;
+    display: none;
+
+    &:checked ~ .hamburger__btn > .hamburger__btn-lines {
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .hamburger__btn > .hamburger__btn-lines::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    &:checked ~ .hamburger__btn > .hamburger__btn-lines::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    &:checked ~ .hamburger__menu {
+      visibility: visible;
+      right: 25px;
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    width: 44px;
+    height: 37px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: $black;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+
+    &-lines {
+      &::before {
+        content: '';
+        top: -6px;
+      }
+
+      &::after {
+        content: '';
+        top: 6px;
+      }
+    }
+  }
+
+  &__btn-lines {
+    @include btn-lines;
+
+    &::before {
+      @include btn-lines;
+    }
+
+    &::after {
+      @include btn-lines;
+    }
+  }
+
+  &__menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 57px;
+    right: 25px;
+    width: 180px;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    z-index: 1;
+    opacity: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      visibility: visible;
+      position: initial;
+      background-color: initial;
+      display: flex;
+      max-width: 610px;
+      width: 100%;
+      height: auto;
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    text-align: left;
+    min-height: 28px;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      background-color: #E5E5E5;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 8px 13px;
+    color: $dark;
+    font-size: 11px;
+    line-height: 14px;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+
+    &--green {
+      color: #57A4A4;
+    }
+  }
+}
+
+.intro {
+  padding-top: 5px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 30px
+  }
+
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+}

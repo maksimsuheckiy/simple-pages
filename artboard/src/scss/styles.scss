@@ -1,0 +1,29 @@
+@import "reset";
+@import "common";
+@import "mixins";
+
+@import "./sections/header";
+@import "./sections/posts";
+@import "./sections/last-shots";
+@import "./sections/footer";
+
+.page {
+  font-family: 'Roboto', Arial sans-serif;
+}
+
+.wrapper {
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 1170px;
+  }
+}

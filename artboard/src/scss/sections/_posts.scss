@@ -1,0 +1,106 @@
+.posts {
+  padding: 40px 0 50px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 55px 0 30px;
+  }
+
+  &__header {
+    position: relative;
+
+    &::before {
+      @include title-decoration;
+    }
+  }
+
+  &__content {
+    padding-top: 25px;
+
+    @media (min-width: $breakpoint-desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $dark;
+    padding-left: 8px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__item {
+    padding-bottom: 30px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &--hidden {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__desc {
+    max-width: 405px;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-left: 20px;
+    }
+  }
+
+  &__caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+    padding-top: 10px;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-top: 0;
+    }
+  }
+
+  &__category {
+    font-size: 11px;
+    line-height: 20px;
+    color: $dark-gray;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    color: #5C5C5C;
+    padding-top: 15px;
+
+    &--hidden {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &__desc-divider {
+    padding: 0 8px 0 8px;
+  }
+}
+

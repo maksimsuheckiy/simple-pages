@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArtBoard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+</head>
+<body class="page">
+    <header class="header wrapper">
+        <nav class="nav">
+            <div class="hamburger">
+                <input id="hamburger__toggle" type="checkbox" class="hamburger__toggle"/>
+                <label class="hamburger__btn" for="hamburger__toggle">
+                    <span class="hamburger__btn-lines"></span>
+                </label>
+                <ul class="hamburger__menu">
+                    <li class="hamburger__item"><a class="hamburger__link hamburger__link--green" href="#">home</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#">about us</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#">our journal</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#">projects</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#">news</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#">features</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="intro">
+            <a href="#">
+                <img src="./src/img/intro.png" alt="ArtBoard intro" class="intro__picture">
+            </a>
+        </section>
+    </header>
+    <section class="posts">
+        <div class="wrapper">
+            <div class="posts__header">
+                <h2 class="posts__title">Our Recent Posts</h2>
+            </div>
+            <div class="posts__content">
+                <figure class="posts__item">
+                    <a href="#">
+                        <img src="./src/img/post-1.png" alt="Aenean Adipiscing Etiam Vestibulum" class="posts__picture">
+                    </a>
+                    <figcaption class="posts__desc">
+                        <h3 class="posts__caption">Aenean Adipiscing Etiam Vestibulum</h3>
+                        <p class="posts__category">Photography, Journal <span class="posts__desc-divider">/</span> 9 Comments</p>
+                        <p class="posts__text posts__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </figcaption>
+                </figure>
+                <figure class="posts__item">
+                    <a href="#">
+                        <img src="./src/img/post-2.png" alt="Aenean Adipiscing Etiam Vestibulum" class="posts__picture">
+                    </a>
+                    <figcaption class="posts__desc">
+                        <h3 class="posts__caption">Aenean Adipiscing Etiam Vestibulum</h3>
+                        <p class="posts__category">Photography, Journal <span class="posts__desc-divider">/</span> 9 Comments</p>
+                        <p class="posts__text posts__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </figcaption>
+                </figure>
+                <figure class="posts__item">
+                    <a href="#">
+                        <img src="./src/img/post-3.png" alt="Aenean Adipiscing Etiam Vestibulum" class="posts__picture">
+                    </a>
+                    <figcaption class="posts__desc">
+                        <h3 class="posts__caption">Aenean Adipiscing Etiam Vestibulum</h3>
+                        <p class="posts__category">Photography, Journal <span class="posts__desc-divider">/</span> 9 Comments</p>
+                        <p class="posts__text posts__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </figcaption>
+                </figure>
+                <figure class="posts__item posts__item--hidden">
+                    <a href="#">
+                        <img src="./src/img/post-4.png" alt="Aenean Adipiscing Etiam Vestibulum" class="posts__picture">
+                    </a>
+                    <figcaption class="posts__desc">
+                        <h3 class="posts__caption">Aenean Adipiscing Etiam Vestibulum</h3>
+                        <p class="posts__category">Photography, Journal <span class="posts__desc-divider">/</span> 9 Comments</p>
+                        <p class="posts__text posts__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="last-shots">
+        <div class="wrapper">
+            <div class="last-shots__header">
+                <h2 class="last-shots__title">Last Instagram Shot</h2>
+                <a href="#" class="last-shots__link last-shots__link--hidden">go to our instagram page</a>
+            </div>
+            <div class="last-shots__content">
+                <a href="#">
+                    <img src="./src/img/shot-1.png" alt="Instagram shot" class="last-shots__picture">
+                </a>
+                <a href="#">
+                    <img src="./src/img/shot-2.png" alt="Instagram shot" class="last-shots__picture last-shots__picture--hidden">
+                </a>
+                <a href="#">
+                    <img src="./src/img/shot-3.png" alt="Instagram shot" class="last-shots__picture last-shots__picture--hidden">
+                </a>
+                <a href="#">
+                    <img src="./src/img/shot-4.png" alt="Instagram shot" class="last-shots__picture last-shots__picture--desktop-only">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contacts">
+            <h2 class="contacts__title">Get in touch with us</h2>
+            <p class="contacts__text">Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet sed donec malesuada ullamcorper odio. <span class="contacts__text--hidden">Curabitur blandit tempus porttitor vollisky inceptos mollisestor.</span></p>
+        </div>
+        <div class="socials">
+            <a href="#" target="_blank">
+                <img src="./src/img/rss.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./src/img/facebook.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./src/img/twitter.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./src/img/dribble.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./src/img/pinterest.png" alt="">
+            </a>
+        </div>
+        <div class="legal">
+            <p class="legal__text">Moonshine St. 14-05 Light City / T. +00 (123) 456 78 90 / <a href="mailto:first.last@email.com" class="legal__text--link">first.last@email.com</a></p>
+        </div>
+    </footer>
+    <script src="src/js/header.js"></script>
+</body>
+</html>

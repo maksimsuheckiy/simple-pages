@@ -1,0 +1,185 @@
+.wrapper {
+    background: url("../assets/milan-holidays.png") center/cover no-repeat #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0 25px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 60px;
+}
+
+.container {
+    max-width: 1030px;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-picture {
+    padding-right: 10px;
+}
+
+.logo:hover .logo-picture_content {
+    content: url("../assets/logo-orange.png");
+}
+
+.logo:hover .logo-text {
+    color: #F26522;
+}
+
+.logo-text {
+    font-size: 29px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo-text--small {
+    font-size: 18px;
+    display: block;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.contacts-email {
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.contacts-email:hover {
+    color: #F26522;
+}
+
+.contacts-tel {
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+    max-width: 150px;
+    transition: .3s;
+}
+
+.contacts-tel:hover {
+    color: #F26522;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-item {
+    max-width: 304px;
+    text-align: center;
+    padding-bottom: 37px;
+}
+
+.item {
+    position: relative;
+}
+
+.item-picture {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-image: linear-gradient(to bottom, white, black) 1 100%;
+    display: block;
+}
+
+.item:hover .item-details {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-38px);
+}
+
+.item:hover .item-caption_link {
+    color: #F26522;
+}
+
+.item-details {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #F26522;
+    left: 2px;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7px 16px 12px;
+    box-sizing: border-box;
+    transition: all .3s cubic-bezier(0, 1.04, 0.58, 1);
+}
+
+.item-details_price {
+    font-size: 10px;
+    line-height: 10px;
+    color: #fff;
+    text-align: left;
+}
+
+.item-details_price--big {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    display: block;
+    padding-top: 8px;
+}
+
+.item-details_link {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.item-details_link::after {
+    content: url("../assets/right-arrow.png");
+    padding-left: 16px;
+    vertical-align: middle;
+}
+
+.item-caption {
+    padding-top: 20px;
+}
+
+.item-caption_link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0 15px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}

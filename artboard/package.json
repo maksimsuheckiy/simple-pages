@@ -1,0 +1,38 @@
+{
+  "name": "artboard",
+  "version": "1.0.0",
+  "description": "step-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Sukhetckiy Maksym",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "imagemin": "^7.0.1",
+    "js-minify": "^0.1.9",
+    "postcss": "^8.2.7",
+    "purify-css": "^1.2.5"
+  }
+}

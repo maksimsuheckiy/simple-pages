@@ -1,0 +1,98 @@
+.last-shots {
+  padding-bottom: 40px;
+
+  @media (min-width: $breakpoint-tablet) {
+    background-color: #f7f7f7;
+    padding: 45px 0 50px;
+  }
+
+  &__header {
+    padding-bottom: 10px;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $dark;
+    padding: 0 10px;
+    position: relative;
+
+    &::before {
+      @include title-decoration;
+      left: 0;
+    }
+
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $dark;
+    padding: 0 10px;
+    position: relative;
+
+    &--hidden {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: block;
+      }
+    }
+
+    &::after {
+      @include title-decoration;
+      right: 0;
+    }
+  }
+
+  &__content {
+    @media (min-width: $breakpoint-tablet) {
+      @include grid-container;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      @include grid-container;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__picture {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 100%;
+    }
+
+    &--hidden {
+      display: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: block;
+      }
+    }
+
+    &--desktop-only {
+      display: none;
+
+      @media (min-width: $breakpoint-desktop) {
+        display: block;
+      }
+    }
+  }
+}

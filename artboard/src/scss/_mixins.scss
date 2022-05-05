@@ -1,0 +1,22 @@
+@mixin btn-lines {
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 2px;
+  background-color: #fff;
+  transition-duration: .30s;
+}
+
+@mixin title-decoration {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 2px;
+  background-color: #4e4e4e;
+  top: 9px;
+}
+
+@mixin grid-container {
+  display: grid;
+  grid-gap: 10px;
+}
